@@ -60,7 +60,7 @@ The database is created automatically on first run with businesses, reviews, and
 
 ## Why Python
 
-I chose Python because tkinter and sqlite3 are both part of the standard library, so the app runs on any computer with Python without extra installs. It also made it great to organize the project into separate files without needing a seperate framework.
+I chose Python because tkinter and sqlite3 are both part of the standard library, so the app runs on any computer with Python without extra installs. It also made it great to organize the project into separate files without needing a separate framework.
 
 ## How It's Built
 
@@ -68,7 +68,7 @@ The project is split into five files by their role. `main.py` launches the app. 
 
 The GUI never runs SQL directly. Everything goes through functions in `database.py`, so the interface and data layer are kept separate. If I need to change how data is stored I only have to update one file.
 
-The database uses four tables: `businesses`, `reviews`, `favorites`, and `deals`. The favorites table has a UNIQUE constraint on the business_id and username so there wont be duplicate favorites at the database level.
+The database uses four tables: `businesses`, `reviews`, `favorites`, and `deals`. They reference each other by ID. The favorites table has a UNIQUE constraint on the business_id and username so there wont be duplicate favorites at the database level.
 
 ## Libraries
 
