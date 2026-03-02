@@ -80,11 +80,10 @@ All from Python's standard library and no third party packages were used.
 - `datetime` for timestamps
 - `random` for captcha generation
 - `re` for input validation
+- `shutil` for database backups
+
+There is no copyrighted material included in this submission.
 
 ---
 
 Thanks for checking out my project! I hope you enjoy using it!
-
-- `shutil` for database backups
-
-No copyrighted material, external templates, or third party code was used.
