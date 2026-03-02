@@ -271,7 +271,7 @@ def findRecommendations(user, limit=6):
     db2.close()
     return results
 
-
+# backup of the database so I dont lose any businesses' information
 def makeBackup(path):
     try:
         shutil.copy2(DB, path)
